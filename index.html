@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>The Official Boyfriend Application</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <div class="form-title">
+                    <h1><span class="subtitle">The Official</span>Boyfriend Application</h1>
+                </div>
+                <div class="form-img">
+                    <img class="header-img" src="src/img/20855051_6298411.jpg" alt="">
+                </div>
+            </header>
+            <article>
+                <div class="form-info">
+                    <section>
+                        <p>
+                            Looking for a partner? This is your chance to show your best self and find a good heart to
+                            share your life with, so let your personality shine through! We're
+                            excited to get to know you better and connect you to your soulmate.
+                            Good luck and have fun. ❤️
+                        </p>
+                    </section>
+                </div>
+
+                <section>
+                    <div class="form-container">
+                        <form action="" id="form" method="GET">
+                            <ol>
+                                <li>
+                                    <div class="fieldset-title">
+                                        <p>1. Basic Information</p>
+                                    </div>
+                                    <fieldset>
+                                        <div class="basic-info">
+                                            <div class="input-container col-6">
+                                                <label for="full-name">
+                                                    Full Name <span class="required">*</span>
+                                                    <input class="lbl-margin" id="full-name" name="full-name">
+                                                </label>
+                                                <div class="error-msg" id="full-name-error"><span>This field is
+                                                        required.</span></div>
+                                            </div>
+                                            <div class="input-container col-2">
+                                                <label for="age">
+                                                    Age (years) <span class="required">*</span>
+                                                    <input class="lbl-margin" type="number" id="age" name="age">
+                                                </label>
+                                                <div class="error-msg" id="age-error"><span>This field is
+                                                        required.</span></div>
+                                                <div class="error-msg" id="age-error-invalid"><span>Invalid age.</span></div>
+                                            </div>
+                                            <div class="input-container col-2">
+                                                <label for="height">
+                                                    Height (cm)<span class="required">*</span>
+                                                    <input class="lbl-margin" type="number" id="height" name="height">
+                                                </label>
+                                                <div class="error-msg" id="height-error"><span>This field is
+                                                        required.</span></div>
+                                                <div class="error-msg" id="height-error-invalid"><span>Invalid height.</span></div>
+
+                                            </div>
+                                            <div class="input-container col-2">
+                                                <label for="weight">
+                                                    Weight (kg)<span class="required">*</span>
+                                                    <input class="lbl-margin" type="number" id="weight" name="weight">
+                                                </label>
+                                                <div class="error-msg" id="weight-error"><span>This field is
+                                                        required.</span></div>
+                                                <div class="error-msg" id="weight-error-invalid"><span>Invalid weight.</span></div>
+
+                                            </div>
+                                            <div class="input-container col-3">
+                                                <label for="eye-color">
+                                                    Eye Color <span class="required">*</span>
+                                                    <input class="lbl-margin" type="text" id="eye-color"
+                                                        name="eye-color">
+                                                </label>
+                                                <div class="error-msg" id="eye-color-error"><span>This field is
+                                                        required.</span></div>
+                                            </div>
+                                            <div class="input-container col-3">
+                                                <label for="hair-color">
+                                                    Hair Color <span class="required">*</span>
+                                                    <input class="lbl-margin" type="text" id="hair-color"
+                                                        name="eye-color">
+                                                </label>
+                                                <div class="error-msg" id="hair-color-error"><span>This field is
+                                                        required.</span></div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </li>
+                                <li>
+                                    <div class="fieldset-title">
+                                        2. Contact Information
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <div class="contact-info">
+                                                <div class="input-container col-2">
+                                                    <label for="cellphone" class="col-2">
+                                                        Cellphone <span class="required">*</span>
+                                                        <input class="lbl-margin" type="tel" name="cellphone"
+                                                            id="cellphone">
+                                                    </label>
+                                                    <div class="error-msg" id="cellphone-error"><span>This field is
+                                                            required.</span></div>
+                                                </div>
+                                                <div class="input-container col-2">
+                                                    <label for="instagram" class="col-2">
+                                                        Instagram
+                                                        <input class="lbl-margin" type="text" name="instagram"
+                                                            id="instagram">
+                                                    </label>
+                                                </div>
+                                                <div class="input-container col-2">
+                                                    <label for="twitter" class="col-2">
+                                                        Twitter
+                                                        <input class="lbl-margin" type="text" name="twitter"
+                                                            id="twitter">
+                                                    </label>
+                                                </div>
+                                                <div class="input-container col-2">
+                                                    <label for="tiktok" class="col-2">
+                                                        Tiktok
+                                                        <input class="lbl-margin" type="text" name="tiktok" id="tiktok">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fieldset-title">
+                                        3. Important Information
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <div class="important-info">
+                                                <div class="input-container radio-btn">
+                                                    <fieldset>
+                                                        <legend>Do you smoke? <span class="required">*</span></legend>
+                                                        <div>
+                                                            <label class="rb-lbl" for="smoking-yes">
+                                                                <input type="radio" name="smoking" id="smoking-yes"
+                                                                    value="yes">
+                                                                Yes
+                                                            </label>
+                                                        </div>
+                                                        <div>
+                                                            <label class="rb-lbl" for="smoking-no">
+                                                                <input type="radio" name="smoking" id="smoking-no"
+                                                                    value="no">
+                                                                No
+                                                            </label>
+                                                        </div>
+                                                        <div class="error-msg" id="smoking-error"><span>This field is
+                                                                required.</span></div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="input-container radio-btn">
+                                                    <fieldset>
+                                                        <legend>Do you drink? <span class="required">*</span></legend>
+                                                        <div>
+                                                            <label class="rb-lbl" for="drinking-yes">
+                                                                <input type="radio" name="drinking" id="drinking-yes"
+                                                                    value="yes">
+                                                                Yes
+                                                            </label>
+                                                        </div>
+                                                        <div>
+                                                            <label class="rb-lbl" for="drinking-no">
+                                                                <input type="radio" name="drinking" id="drinking-no"
+                                                                    value="no">
+                                                                No
+                                                            </label>
+                                                        </div>
+                                                        <div class="error-msg" id="drinking-error"><span>This field is
+                                                                required.</span></div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="input-container radio-btn">
+                                                    <fieldset>
+                                                        <legend>Are you an <span class="required">*</span></legend>
+                                                        <div>
+                                                            <label class="rb-lbl" for="introvert">
+                                                                <input type="radio" name="personality" id="introvert"
+                                                                    value="introvert">
+                                                                Introvert
+                                                            </label>
+                                                        </div>
+                                                        <div>
+                                                            <label class="rb-lbl" for="extrovert">
+                                                                <input type="radio" name="personality" id="extrovert"
+                                                                    value="extrovert">
+                                                                Extrovert
+                                                            </label>
+                                                        </div>
+                                                        <div class="error-msg" id="personality-error"><span>This field
+                                                                is required.</span></div>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="pets">
+                                                        Do you have any pets? <span class="required">*</span>
+                                                    </label>
+                                                    <input class="lbl-margin" type="text" name="pets" id="pets">
+                                                    <div class="error-msg" id="pets-error"><span>This field is
+                                                            required.</span></div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fieldset-title">
+                                        4. Your hobbies
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <div class="hobbies-info">
+                                                <div class="input-container">
+                                                    <label for="hobbies">Do you have any hobbies? <span
+                                                            class="required">*</span>
+                                                        <input class="lbl-margin" type="text" name="hobbies"
+                                                            id="hobbies">
+                                                        <div class="error-msg" id="hobbies-error"><span>This field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="fav-movie">What's your favorite movie? <span
+                                                            class="required">*</span>
+                                                        <input class="lbl-margin" type="text" name="fav-movie"
+                                                            id="fav-movie">
+                                                        <div class="error-msg" id="fav-movie-error"><span>This field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="fav-book">What's your favorite book? <span
+                                                            class="required">*</span>
+                                                        <input class="lbl-margin" type="text" name="fav-book"
+                                                            id="fav-book">
+                                                        <div class="error-msg" id="fav-book-error"><span>This field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="games">Do you play any games? <span
+                                                            class="required">*</span>
+                                                        <input class="lbl-margin" type="text" name="games" id="games">
+                                                        <div class="error-msg" id="games-error"><span>This field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="cats-or-dogs">Are you a cat or a dog person? <span
+                                                            class="required">*</span>
+                                                        <input class="lbl-margin" type="text" name="cats-or-dogs"
+                                                            id="cats-or-dogs">
+                                                        <div class="error-msg" id="cats-or-dogs-error"><span>This field
+                                                                is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fieldset-title">
+                                        5. Tell me more about yourself
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <div class="more-about-yourself">
+                                                <div class="input-container">
+                                                    <label for="describe-yourself">
+                                                        How would you describe yourself? <span class="required">*</span>
+                                                        <textarea class="lbl-margin" name="describe-yourself"
+                                                            id="describe-yourself" cols="100" rows="4"></textarea>
+                                                        <div class="error-msg" id="describe-yourself-error"><span>This
+                                                                field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="passion">
+                                                        What are you passionate about? <span class="required">*</span>
+                                                        <textarea class="lbl-margin" name="passion" id="passion"
+                                                            cols="100" rows="4"></textarea>
+                                                        <div class="error-msg" id="passion-error"><span>This field is
+                                                                required.</span></div>
+
+                                                    </label>
+                                                </div>
+                                                <div class="input-container">
+                                                    <label for="observations">
+                                                        Free space to write whatever you feel like writing :)
+                                                        <textarea class="lbl-margin" name="observations"
+                                                            id="observations" cols="100" rows="4"></textarea>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </li>
+                            </ol>
+                            <div class="form-footer">
+                                <div class="check-container">
+                                    <input type="checkbox" name="permission" id="permission">
+                                    <label class="check-lbl" for="permission">I give permission to the creators of the
+                                        website to store the data filled out in this form so my application can be
+                                        evaluated. <span class="required">*</span></label>
+                                    <div class="error-msg" id="permission-error"><span>This field is
+                                            required.</span></div>
+                                </div>
+                                <button type="submit">
+                                    Apply
+                                </button>
+                                <p class="submit-info">
+                                    By clicking on Apply, your answers will be submitted to posterior evaluation.
+                                    Please, do not fill out this form more than once. Your answers can not be edited
+                                    once sent.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="node_modules\jquery\dist\jquery.js"></script>
+    <script src="src/js/form.js"></script>
+</body>
+
+</html>
