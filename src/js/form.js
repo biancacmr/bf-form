@@ -147,17 +147,19 @@ function checkFields() {
 
 function blurValidation(element, id) {
     let value = $(element).val().toString();
-    value = value.replace(/^0+/g, "");
-    $(element).val(value);
+    if (value != undefined && value != null && value.trim().length > 0) {
+        value = value.replace(/^0+/g, "");
+        $(element).val(value);
 
-    value = parseInt(value);
-    if (isNaN(value) || (value > 300) || (value < 0)) {
-        $(element).val("");
-        addInvalidClass(id)
-        showInvalidMessage(id);
-    } else {
-        removeInvalidClass(id)
-        hideInvalidMessage(id);
+        value = parseInt(value);
+        if (isNaN(value) || (value > 300) || (value < 0)) {
+            $(element).val("");
+            addInvalidClass(id)
+            showInvalidMessage(id);
+        } else {
+            removeInvalidClass(id)
+            hideInvalidMessage(id);
+        }
     }
 }
 
