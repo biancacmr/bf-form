@@ -27,6 +27,11 @@ function eventsForm() {
         if (isNaN(age) || (age > 100) || (age < 0)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("age");
+            showInvalidMessage("age");
+        } else {
+            hideInvalidMessage("age");
+            removeInvalidClass("age");
         }
     });
 
@@ -36,11 +41,12 @@ function eventsForm() {
         if (isNaN(age) || (age > 100) || (age < 0)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("age");
+            showInvalidMessage("age");
+        } else {
+            hideInvalidMessage("age");
+            removeInvalidClass("age");
         }
-    });
-
-    $("#age").on("blur", function () {
-        blurValidation(this, "age")
     });
 
     $("#height").on("keydown", function (event) {
@@ -54,6 +60,11 @@ function eventsForm() {
         if (isNaN(age) || (age > 280)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("height");
+            showInvalidMessage("height");
+        } else {
+            hideInvalidMessage("height");
+            removeInvalidClass("height");
         }
     });
 
@@ -63,11 +74,12 @@ function eventsForm() {
         if (isNaN(age) || (age > 280) || (age < 100)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("height");
+            showInvalidMessage("height");
+        } else {
+            hideInvalidMessage("height");
+            removeInvalidClass("height");
         }
-    });
-
-    $("#height").on("blur", function () {
-        blurValidation(this, "height");
     });
 
     $("#weight").on("keydown", function (event) {
@@ -81,6 +93,11 @@ function eventsForm() {
         if (isNaN(age) || (age > 300)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("weight");
+            showInvalidMessage("weight");
+        } else {
+            hideInvalidMessage("weight");
+            removeInvalidClass("weight");
         }
     });
 
@@ -90,11 +107,12 @@ function eventsForm() {
         if (isNaN(age) || (age > 300) || (age < 0)) {
             $(this).val("");
             event.preventDefault();
+            addInvalidClass("weight");
+            showInvalidMessage("weight");
+        } else {
+            hideInvalidMessage("weight");
+            removeInvalidClass("weight");
         }
-    });
-
-    $("#weight").on("blur", function () {
-        blurValidation(this, "weight");
     });
 }
 
@@ -144,24 +162,6 @@ function checkFields() {
 }
 
 /************** Auxiliar functions ****************/
-
-function blurValidation(element, id) {
-    let value = $(element).val().toString();
-    if (value != undefined && value != null && value.trim().length > 0) {
-        value = value.replace(/^0+/g, "");
-        $(element).val(value);
-
-        value = parseInt(value);
-        if (isNaN(value) || (value > 300) || (value < 0)) {
-            $(element).val("");
-            addInvalidClass(id)
-            showInvalidMessage(id);
-        } else {
-            removeInvalidClass(id)
-            hideInvalidMessage(id);
-        }
-    }
-}
 
 function addInvalidClass(field) {
     $(`#${field}`).addClass("invalid");
